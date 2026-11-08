@@ -3,10 +3,40 @@
 video: https://www.bilibili.com/video/BV1CpQDYDE67/?vd_source=18e4b7b95b505bbe9bf571ca4ff73d55
 
 # chen_lyu_real-time_2024_apen
+
+[简体中文](README_zh-CN.md)
+
+## Quick start
+
+Install MATLAB, [YALMIP](https://yalmip.github.io/), and Gurobi with a valid license. Then change MATLAB's current folder to the repository root and run:
+
+```matlab
+run_demo
+```
+
+The demo checks the installation, uses the included processed data for day 21, runs the optimal real-time operation method, and writes:
+
+- `results/result_optimal_bid_ctrl_sep_.mat`
+- `results/demo_profit.png`
+
+To check the environment without running the optimization:
+
+```matlab
+check_installation
+```
+
+To skip the demo figure:
+
+```matlab
+run_demo("MakePlot", false)
+```
+
+The original comparison workflows remain available in `proportional_control` and `greedy_control`.
+
 ### Project Overview
 
 #### Introduction
-This repository contains the data and code used in the research paper titled "Real-Time Operation Strategy of Virtual Power Plants With Optimal Power Disaggregation Among Heterogeneous Resources" published in Applied Energy (2024). The data is organized in the file `Test data of VPP providing regulation.xlsx`.
+This repository contains the data and code used in the research paper titled "Real-Time Operation Strategy of Virtual Power Plants With Optimal Power Disaggregation Among Heterogeneous Resources" published in Applied Energy (2024). The data is organized in the file `Test data of VPP providing regulation.xls`.
 
 Citation: Q. Chen, R. Lyu, H. Guo, and X. Su. "Real-Time Operation Strategy of Virtual Power Plants With Optimal Power Disaggregation Among Heterogeneous Resources." Applied Energy 361 (2024): 122876.
 
